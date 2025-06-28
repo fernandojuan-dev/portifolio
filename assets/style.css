@@ -1,65 +1,72 @@
 /* ESTILO GERAL DESKTOP 1366px*/
 body {
-    background-image: url(../images/bg_inicio.png);
-    background-repeat: no-repeat;
-    background-color: #080c0d;
-    background-size: cover;
-    background-position: center;
-    font-family: "Source Code Pro", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-    border: 1px solid red;
+  background-image: url(../images/bg_inicio.png);
+  background-repeat: no-repeat;
+  background-color: #080c0d;
+  background-size: cover;
+  background-position: center;
+  font-family: "Source Code Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  justify-self: center;
+  border: 1px solid red;
+  height: auto;
 }
 
 /* CONFIGURAÇÃO DO GRID */
 .grid {
-    display: grid;
-    max-width: 1366px;
-    height: auto;
-    justify-self: center;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    border: 1px solid blue;
-    padding: 100px 0px 100px 0px;
+  display: grid;
+  max-width: 1366px;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid blue;
+  column-gap: 20px;
 }
 
-.grid>div {
-    border: 1px solid green;
+.section_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px 0px 25px 0px;
+  border: 1px solid green;
 }
 
 /* APRESENTAÇÃO */
 .apresentacao {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / span 2 ;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / span 2;
 }
 
 /* TEXTO DE APRESENTAÇÃO */
 /* LOGO */
 .logo {
-    max-width: 200px;
-    min-width: none;
+  max-width: 200px;
+  min-width: none;
 }
+
 .textoapresentacao {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 16px;
 }
+
 .textoapresentacao>span {
-    color: white;
-    font-size: 32px;
+  color: white;
+  font-size: 40px;
+  line-height: 42px;
+  margin: 20px 0px 20px 0px;
 }
 
 /* CONTATO */
-.apresentacao>.contato{
-    display: flex;
-    gap: 10px;
+.apresentacao>.contato {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
 }
+
 .botao {
   background-color: transparent;
   border: 2px solid #71b292;
@@ -69,15 +76,70 @@ body {
   font-size: 16px;
   font-weight: 900;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
+
 .botao svg {
   margin-right: 10px;
 }
+
 .botao:hover {
   background-color: #71b292;
   color: #080c0d;
 }
+
 .botao:hover svg {
   fill: #080c0d;
+}
+
+
+.ferramentas {
+  grid-column: 3 / span 2;
+}
+
+.itens_ferramentas {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.itens_ferramentas span {
+  margin-bottom: -10px;
+}
+
+.itens_ferramentas>div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.icones_ferramentas img {
+  height: 40px;              
+  max-width: 60px;            
+  object-fit: contain;
+}
+
+.icones_ferramentas img:hover {
+  transform: scale(1.3);
+}
+
+/* SKILLS */
+
+.skills{
+  grid-column: 1 / span 4;
+  width: 100%;
+  background-color: #71b292;
+  border-radius: 500px;
+  color: #080c0d;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.skills>span{
+  width: 95%;
+  margin: auto;
 }
