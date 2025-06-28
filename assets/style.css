@@ -1,27 +1,83 @@
-/* ESTILO GERAL */
+/* ESTILO GERAL DESKTOP 1366px*/
 body {
+    background-image: url(../images/bg_inicio.png);
+    background-repeat: no-repeat;
     background-color: #080c0d;
+    background-size: cover;
+    background-position: center;
     font-family: "Source Code Pro", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     margin: 0;
     padding: 0;
+    border: 1px solid red;
 }
 
 /* CONFIGURAÇÃO DO GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100vw;
+    max-width: 1366px;
     height: auto;
-}
-
-.skills{
-    grid-column: 1 / span 2;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid blue;
+    padding: 100px 0px 100px 0px;
 }
 
 .grid>div {
     border: 1px solid green;
+}
+
+/* APRESENTAÇÃO */
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / span 2 ;
+}
+
+/* TEXTO DE APRESENTAÇÃO */
+/* LOGO */
+.logo {
+    max-width: 200px;
+    min-width: none;
+}
+.textoapresentacao {
+    display: flex;
+    flex-direction: column;
     color: white;
+    font-size: 16px;
+}
+.textoapresentacao>span {
+    color: white;
+    font-size: 32px;
+}
+
+/* CONTATO */
+.apresentacao>.contato{
+    display: flex;
+    gap: 10px;
+}
+.botao {
+  background-color: transparent;
+  border: 2px solid #71b292;
+  padding: 10px 16px;
+  border-radius: 200px;
+  color: #71b292;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.botao svg {
+  margin-right: 10px;
+}
+.botao:hover {
+  background-color: #71b292;
+  color: #080c0d;
+}
+.botao:hover svg {
+  fill: #080c0d;
 }
