@@ -5,22 +5,18 @@ body {
   background-color: #080c0d;
   background-size: cover;
   background-position: top;
-  font-family: "Source Code Pro", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  background-attachment: fixed;
   justify-self: center;
-  border: 1px solid red;
   height: auto;
+  padding: 80px 34px 0px 34px;
 }
 
 /* CONFIGURAÇÃO DO GRID */
 .grid {
   display: grid;
-  max-width: 1366px;
+  max-width: 1400px;
   height: 100%;
   grid-template-columns: repeat(4, 1fr);
-  border: 1px solid blue;
   column-gap: 20px;
 }
 
@@ -29,7 +25,16 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 25px 0px 25px 0px;
-  border: 1px solid green;
+  font-family: "Source Code Pro", serif;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.section_container.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* APRESENTAÇÃO */
@@ -94,7 +99,12 @@ body {
 
 /*FERRAMENTAS*/
 .ferramentas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   grid-column: 3 / span 2;
+  justify-content: center;
+  top: 10px;
 }
 
 .itens_ferramentas {
@@ -113,12 +123,12 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .icones_ferramentas img {
-  height: 40px;              
-  max-width: 60px;            
+  height: 40px;
+  max-width: 60px;
   object-fit: contain;
 }
 
@@ -127,17 +137,17 @@ body {
 }
 
 /* SKILLS */
-.skills{
+.skills {
   grid-column: 1 / span 4;
   background-color: #71b292;
   border-radius: 500px;
   color: #080c0d;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 900;
 }
 
-.skills>span{
+.skills>span {
   width: 95%;
   margin: auto;
 }
@@ -187,13 +197,11 @@ body {
   color: white;
 }
 
-.textoprojetos{
-  grid-column: 3 / span 2  ;
+.textoprojetos {
+  grid-column: 3 / span 2;
   display: flex;
   flex-direction: column;
   color: white;
   font-size: 16px;
   width: 70%;
 }
-
-
