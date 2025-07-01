@@ -30,6 +30,7 @@ body {
   opacity: 0;
   transform: translateY(40px);
   transition: all 1.2s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 .section_container.show {
@@ -191,10 +192,6 @@ body {
   color: white;
 }
 
-.descricao-projeto {
-  overflow: auto;
-}
-
 .textoprojetos {
   grid-column: 3 / span 2;
   display: flex;
@@ -207,4 +204,8 @@ body {
 .textoprojetos>span {
   color: white;
   font-size: 42px;
+}
+
+.container-projeto{
+  overflow: auto;
 }
