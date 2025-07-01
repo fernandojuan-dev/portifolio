@@ -30,7 +30,7 @@ function gerarFraseMotivacional(){
         "Você não precisa ver a escada inteira, apenas dê o primeiro passo.",
         "Acredite no processo. Cada esforço conta."
     ];
-    const numeroAleatorio = [Math.floor(Math.random() * 10)]
-    const frase = frasesMotivacionais[numeroAleatorio]
+
+    const frase = frasesMotivacionais[Math.floor(Math.random() * 10)]
     document.getElementById('frase').innerHTML = frase
 }
