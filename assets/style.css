@@ -207,5 +207,5 @@ body {
 }
 
 .container-projeto{
-  overflow: auto;
+  overflow: scroll;
 }
