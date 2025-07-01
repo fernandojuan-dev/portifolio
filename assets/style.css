@@ -160,11 +160,11 @@ body {
   color: #080c0d;
   background-color: white;
   border-radius: 20px;
-  padding: 30px;
+  padding: 25px;
   margin-top: 40px;
   justify-content: start;
   max-height: 500px;
-  height: 100%;
+  height: auto;
 }
 
 .projetos .botao {
@@ -192,10 +192,16 @@ body {
   color: white;
 }
 
+.container-projeto {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .textoprojetos {
   grid-column: 3 / span 2;
   display: flex;
   flex-direction: column;
+  justify-content: start;
   color: white;
   font-size: 16px;
   width: 70%;
@@ -204,8 +210,4 @@ body {
 .textoprojetos>span {
   color: white;
   font-size: 42px;
-}
-
-.container-projeto{
-  overflow: scroll;
 }
