@@ -1,0 +1,221 @@
+/* ESTILO GERAL DESKTOP 1366px*/
+body {
+  background-image: url(../images/bg_inicio.png);
+  background-repeat: no-repeat;
+  background-color: #080c0d;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  justify-self: center;
+  height: auto;
+  padding: 80px 34px 0px 34px;
+}
+
+/* CONFIGURAÇÃO DO GRID */
+.grid {
+  display: grid;
+  max-width: 1400px;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
+
+.section_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px 0px 25px 0px;
+  font-family: "Source Code Pro", serif;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.2s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+.section_container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* APRESENTAÇÃO */
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / span 2;
+}
+
+/* TEXTO DE APRESENTAÇÃO */
+/* LOGO */
+.logo {
+  max-width: 200px;
+  min-width: none;
+}
+
+.textoapresentacao {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 16px;
+}
+
+.textoapresentacao>span {
+  color: white;
+  font-size: 40px;
+  line-height: 42px;
+  margin: 20px 0px 20px 0px;
+}
+
+/* CONTATO */
+.apresentacao>.contato {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.botao {
+  background-color: transparent;
+  border: 2px solid #71b292;
+  padding: 10px 16px;
+  border-radius: 200px;
+  color: #71b292;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.botao svg {
+  margin-right: 10px;
+}
+
+.botao:hover {
+  background-color: #71b292;
+  color: #080c0d;
+}
+
+.botao:hover svg {
+  fill: #080c0d;
+}
+
+/*FERRAMENTAS*/
+.ferramentas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-column: 3 / span 2;
+  justify-content: center;
+  top: 10px;
+}
+
+.itens_ferramentas {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.itens_ferramentas span {
+  margin-bottom: -10px;
+}
+
+.itens_ferramentas>div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.icones_ferramentas img {
+  height: 40px;
+  max-width: 60px;
+  object-fit: contain;
+}
+
+.icones_ferramentas img:hover {
+  transform: scale(1.3);
+}
+
+/* SKILLS */
+.skills {
+  grid-column: 1 / span 4;
+  background-color: #71b292;
+  border-radius: 500px;
+  color: #080c0d;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.skills>span {
+  width: 95%;
+  margin: auto;
+}
+
+/* PROJETOS*/
+.projetos {
+  position: relative;
+  grid-column: 1 / span 2;
+  color: #080c0d;
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 40px;
+  justify-content: start;
+  max-height: 500px;
+  height: auto;
+}
+
+.projetos .botao {
+  background-color: transparent;
+  border: 2px solid #71b292;
+  padding: 10px 16px;
+  border-radius: 200px;
+  color: #080c0d;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.projetos .botao:hover {
+  background-color: #71b292;
+  color: white;
+}
+
+.projetos .botao.active {
+  background-color: #71b292;
+  color: white;
+}
+
+.container-projeto {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.textoprojetos {
+  grid-column: 3 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: white;
+  font-size: 16px;
+  width: 70%;
+}
+
+.textoprojetos>span {
+  color: white;
+  font-size: 42px;
+}
+
+/* RODAPÉ */
+
+footer {
+  grid-column: 1 / span 4;
+  color: white;
+  text-align: center;
+}

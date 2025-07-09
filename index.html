@@ -1,12 +1,175 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEV Juan Fernando</title>
+    <title>Portifólio Juan Fernando</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>Olá mundo</h1>
-    <h1>Olá mundo</h1>
+    <div class="grid">
+        <!-- apreentação -->
+        <section class="apresentacao section_container">
+            <div class="textoapresentacao">
+                <img class="logo" src="images/logo.svg" alt="Logo"><br>
+                <span>Olá, me chamo<br><strong>Juan Fernando!</strong></span>
+                <p>
+                    Com uma base criativa como designer, estou expandindo minhas habilidades para o desenvolvimento
+                    fullstack, <strong>dominando ferramentas de front-end e back-end</strong> para criar experiências
+                    digitais completas e funcionais.
+                </p>
+            </div>
+            <div class="contato">
+                <a href="https://wa.me/+555181675859" class="botao-link" target="blank">
+                    <button class="botao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg>
+                        Whatsapp
+                    </button>
+                </a>
+                <a href="https://github.com/fernandojuan-dev" class="botao-link" target="blank">
+                    <button class="botao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                        </svg>
+                        GitHub
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <!-- ferramentas -->
+        <section class="ferramentas section_container">
+            <div class="itens_ferramentas">
+                <span>Front-end</span>
+                <hr>
+                <div class="icones_ferramentas">
+                    <img src="images/html.png" alt="HTML" id="html">
+                    <img src="images/css.png" alt="CSS">
+                    <img src="images/js.png" alt="JS">
+                    <img src="images/typescript.png" alt="TS">
+                    <img src="images/bootstrap.png" alt="Bootstrap">
+                    <img src="images/react.png" alt="React">
+                </div>
+            </div>
+            <div class="itens_ferramentas">
+                <span>Back-end</span>
+                <hr>
+                <div class="icones_ferramentas">
+                    <img src="images/python.png" alt="python">
+                    <img src="images/php.png" alt="php">
+                    <img src="images/mysql.png" alt="mysql">
+                    <img src="images/git.png" alt="git">
+                    <img src="images/xammp.png" alt="xammp">
+                    <img src="images/wampserver.png" alt="wampserver">
+                </div>
+            </div>
+            <div class="itens_ferramentas">
+                <span>Design</span>
+                <hr>
+                <div class="icones_ferramentas">
+                    <img src="images/figma.png" alt="figma">
+                    <img src="images/uxui.png" alt="uxui">
+                    <img src="images/illustrator.png" alt="illustrator">
+                    <img src="images/photoshop.png" alt="photoshop">
+                </div>
+            </div>
+            <div class="itens_ferramentas">
+                <span>Outros</span>
+                <hr>
+                <div class="icones_ferramentas">
+                    <img src="images/wordpress.png" alt="wordpress">
+                    <img src="images/trello.png" alt="trello">
+                </div>
+            </div>
+        </section>
+
+        <!-- skills -->
+        <section class="skills section_container">
+            <span>
+                Pensamento criativo - Resolução de problemas - Adaptabilidade - Trabalho em equipe - Colaboração -
+                Organização - Aprendizado contínuo - Proatividade - Atenção aos detalhes - Autodidatismo - Curiosidade
+            </span>
+        </section>
+
+        <!-- -projetos -->
+        <section class="projetos section_container">
+            <nav class="nav nav-pills flex-column flex-sm-row" id="projectTabs">
+                <a class="botao active" data-bs-toggle="tab" href="#projeto1">Frases Motivacionais</a>
+                <a class="botao" data-bs-toggle="tab" href="#projeto2">Projeto 2</a>
+                <a class="botao" data-bs-toggle="tab" href="#projeto3">Projeto 3</a>
+            </nav>
+            <div class="tab-content mt-3 container-projeto">
+                <div class="tab-pane fade show active" id="projeto1">
+                    <p>Utilizando Bootstrap e JavaScript, criei um sistema aleatório bem simples de frases
+                        motivacionais. Diverta-se!
+                    </p>
+                    <div class="">
+                        <div class="row">
+                            <div class="">
+
+                                <div class="">
+                                    <h3>Frases motivacionais</h3>
+                                    <hr>
+                                    <h2 class="" id="frase">
+                                        Em busca do ótimo não se faz o bom.
+                                    </h2>
+                                    <hr>
+                                    <button type="button" class="btn btn-success btn-lg"
+                                        onclick="gerarFraseMotivacional()">Nova frase</button>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="projeto2">
+                    <p>Em breve mais projetos!</p>
+                </div>
+                <div class="tab-pane fade" id="projeto3">
+                    <p>Em breve mais projetos!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="textoprojetos section_container">
+            <span><strong>Meus Projetos</strong> </span>
+            <p>Estes são projetos iniciais e simples, desenvolvidos com o objetivo de colocar em prática meus
+                conhecimentos
+                em front-end e back-end.
+                <br><br>
+                Cada projeto foi pensado como uma forma de aprendizado, explorando diferentes
+                ferramentas e tecnologias para construir aplicações funcionais e completas.
+                <br><br>
+                Eles representam minha evolução como desenvolvedor fullstack e servem como prova de conhecimento técnico
+                e
+                dedicação constante ao aprendizado.
+            </p>
+        </section>
+        <footer class="section_container">
+            <p>Design e Desenvolvimento: Juan Fernando</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
 </body>
+
 </html>
